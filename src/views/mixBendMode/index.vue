@@ -2,7 +2,7 @@
  * @Author: Chodge
  * @Date: 2022-03-18 15:09:04
  * @LastEditors: g05047
- * @LastEditTime: 2022-03-22 17:02:34
+ * @LastEditTime: 2022-03-22 17:22:05
  * @Description: file content
 -->
 <template>
@@ -19,7 +19,9 @@ import { onMounted } from "@vue/runtime-core";
 export default {
   name: "mixBendMode",
   setup() {
-    onMounted(() => {});
+    onMounted(() => {
+      console.log('背景混合模式');
+    });
   },
 };
 </script>
