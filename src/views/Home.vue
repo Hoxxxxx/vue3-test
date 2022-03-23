@@ -2,7 +2,7 @@
  * @Author: Chodge
  * @Date: 2021-12-17 11:05:15
  * @LastEditors: g05047
- * @LastEditTime: 2022-03-22 16:15:22
+ * @LastEditTime: 2022-03-23 14:13:20
  * @Description: file content
 -->
 <template>
@@ -11,7 +11,9 @@
       <Menu />
     </el-col>
     <el-col :span="21">
-      <router-view />
+      <div class="content">
+        <router-view />
+      </div>
     </el-col>
   </el-row>
 </template>
@@ -25,10 +27,15 @@ export default {
 </script>
 <style lang="less" scoped>
 .el-row {
-  height: 100%;
+  height: 100vh;
   .el-col {
+    height: 100%;
     /deep/ .el-menu {
       height: 100%;
+    }
+    .content {
+      height: 100%;
+      overflow: auto;
     }
   }
 }

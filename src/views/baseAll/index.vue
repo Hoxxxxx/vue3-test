@@ -2,7 +2,7 @@
  * @Author: Chodge
  * @Date: 2021-12-17 11:05:15
  * @LastEditors: g05047
- * @LastEditTime: 2022-03-22 17:06:45
+ * @LastEditTime: 2022-03-23 10:27:46
  * @Description: file content
 -->
 <template>
@@ -35,7 +35,7 @@ import {
 } from "@vue/runtime-core";
 import { ElMessage } from "element-plus";
 export default {
-  name: "about",
+  name: "baseAll",
   components: {},
   setup() {
     const Obj = {
